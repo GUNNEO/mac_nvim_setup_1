@@ -135,6 +135,9 @@ return packer.startup(function(use)
 
 	-- image
 	use("3rd/image.nvim")
+
+	-- copilot
+	use("github/copilot.vim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
