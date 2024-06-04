@@ -31,6 +31,9 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	use("ellisonleao/gruvbox.nvim") -- color scheme
+	use("folke/tokyonight.nvim") -- color scheme 2
+	use("savq/melange-nvim") -- color scheme 3
+	use("AlexvZyl/nordic.nvim") -- color scheme 4
 
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
@@ -135,9 +138,6 @@ return packer.startup(function(use)
 
 	-- image
 	use("3rd/image.nvim")
-
-	-- copilot
-	use("github/copilot.vim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
