@@ -110,9 +110,6 @@ return packer.startup(function(use)
 	-- plenary.nvim
 	use("nvim-lua/plenary.nvim")
 
-	-- automatically run python file with <leader>r
-	use("thinca/vim-quickrun")
-
 	-- matlab
 	use("daeyun/vim-matlab")
 
@@ -138,6 +135,28 @@ return packer.startup(function(use)
 
 	-- image
 	use("3rd/image.nvim")
+
+	use("rcarriga/nvim-notify")
+
+	-- leetcode
+	use({
+		"kawre/leetcode.nvim",
+		run = ":TSUpdate html",
+		requires = {
+			"nvim-telescope/telescope.nvim",
+			"nvim-lua/plenary.nvim",
+			"MunifTanjim/nui.nvim",
+
+			-- optional
+			"nvim-treesitter/nvim-treesitter",
+			"rcarriga/nvim-notify",
+			"nvim-tree/nvim-web-devicons",
+		},
+	})
+
+	-- highlight color
+	use("brenoprata10/nvim-highlight-colors")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

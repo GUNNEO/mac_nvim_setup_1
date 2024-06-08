@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/jester",
     url = "https://github.com/David-Kunz/jester"
   },
+  ["leetcode.nvim"] = {
+    loaded = true,
+    path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/leetcode.nvim",
+    url = "https://github.com/kawre/leetcode.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -219,10 +224,20 @@ _G.packer_plugins = {
     path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
+  ["nvim-highlight-colors"] = {
+    loaded = true,
+    path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/nvim-highlight-colors",
+    url = "https://github.com/brenoprata10/nvim-highlight-colors"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -295,11 +310,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-quickrun"] = {
-    loaded = true,
-    path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/vim-quickrun",
-    url = "https://github.com/thinca/vim-quickrun"
   },
   ["vim-surround"] = {
     loaded = true,
