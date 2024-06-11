@@ -86,6 +86,3 @@ keymap.set("n", "<leader>ll", "<cmd>VimtexCompile<CR>")
 keymap.set("n", "<leader>lv", "<cmd>VimtexView<CR>")
 keymap.set("n", "<leader>zp", "<cmd>!zathura '%'<CR>")
 keymap.set("n", "<leader>op", "<cmd>!open '%'<CR>")
-
--- formatter
-keymap.set("n", "<leader>pf", "<cmd>Neoformat! python autopep8<CR>")
