@@ -68,11 +68,15 @@ lspconfig["cssls"].setup({
 
 -- configure python lsp server
 lspconfig["pylsp"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
-lspconfig["pyright"].setup({
+	settings = {
+		pylsp = {
+			plugins = {
+				pycodestyle = {
+					ignore = { "E111", "E114" }, -- E111/E114 是缩进不是4的警告
+				},
+			},
+		},
+	},
 	capabilities = capabilities,
 	on_attach = on_attach,
 })

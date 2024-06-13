@@ -29,7 +29,6 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"emmet_ls",
 		"pylsp",
-		"pyright",
 		"matlab_ls",
 		"texlab",
 	},
@@ -41,8 +40,7 @@ mason_null_ls.setup({
 		"prettier", -- ts/js formatter
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
-		"autopep8", -- python formatter
-		"latexindent", -- latex formatter
-		"shfmt",
+		"shfmt", --sh script formatter
+		"autopep8", --python formatter
 	},
 })

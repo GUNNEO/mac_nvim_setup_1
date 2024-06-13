@@ -24,7 +24,6 @@ null_ls.setup({
 		--  "formatting.prettier.with({disabled_filetypes = {}})" (see null-ls docs)
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
-		formatting.autopep8,
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js
 			condition = function(utils)
@@ -34,6 +33,8 @@ null_ls.setup({
 		formatting.clang_format.with({
 			extra_args = { "--style={BasedOnStyle: llvm, IndentWidth: 2}" },
 		}),
+		formatting.autopep8.with({ extra_args = { "--indent-size=2" } }),
+		formatting.shfmt,
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)

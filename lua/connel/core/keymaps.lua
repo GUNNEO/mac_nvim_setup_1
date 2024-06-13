@@ -71,7 +71,7 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
 -- auto run file
-keymap.set("n", "<leader>ll", "<cmd>!lua53 %<CR>")
+keymap.set("n", "<leader>ll", "<cmd>!lua %<CR>")
 keymap.set("n", "<leader>pp", "<cmd>!python3 %<CR>")
 keymap.set("n", "<leader>cpp", ":w<CR>:!clang++ -g -arch arm64 % -o %:r && %:r<CR>", { noremap = true, silent = true })
 
@@ -82,7 +82,12 @@ keymap.set("n", "<leader>/", "<cmd>lua require('dap').step_over()<CR>")
 keymap.set("n", "<leader>.", "<cmd>lua require('dap').step_into()<CR>")
 
 -- latex
-keymap.set("n", "<leader>ll", "<cmd>VimtexCompile<CR>")
+keymap.set("n", "<leader>lt", "<cmd>VimtexCompile<CR>")
 keymap.set("n", "<leader>lv", "<cmd>VimtexView<CR>")
 keymap.set("n", "<leader>zp", "<cmd>!zathura '%'<CR>")
 keymap.set("n", "<leader>op", "<cmd>!open '%'<CR>")
+
+-- leetcode
+keymap.set("n", "<leader>lp", "<cmd>Leet list<CR>")
+keymap.set("n", "<leader>lr", "<cmd>Leet run<CR>")
+keymap.set("n", "<leader>ls", "<cmd>Leet submit<CR>")
