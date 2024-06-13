@@ -33,7 +33,7 @@ null_ls.setup({
 		formatting.clang_format.with({
 			extra_args = { "--style={BasedOnStyle: llvm, IndentWidth: 2}" },
 		}),
-		formatting.autopep8.with({ extra_args = { "--indent-size=2" } }),
+		formatting.autopep8.with({ extra_args = { "--indent-size=4" } }),
 		formatting.shfmt,
 	},
 	-- configure format on save
