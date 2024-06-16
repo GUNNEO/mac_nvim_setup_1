@@ -11,7 +11,7 @@ dap.configurations.python = {
 		name = "Launch file",
 		program = "${file}",
 		pythonPath = function()
-			return "/usr/bin/python3"
+			return "/Users/gunneo/anaconda3/bin/python3"
 		end,
 	},
 }

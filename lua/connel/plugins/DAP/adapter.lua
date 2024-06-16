@@ -20,7 +20,7 @@ dap.adapters.python = function(cb, config)
 	else
 		cb({
 			type = "executable",
-			command = "python3",
+			command = "/Users/gunneo/anaconda3/bin/python3",
 			args = {
 				"-m",
 				"debugpy.adapter",
@@ -37,7 +37,7 @@ dap.adapters.codelldb = {
 	host = "127.0.0.1",
 	port = "${port}",
 	executable = {
-		command = "/Users/gunneo/.local/share/nvim/mason/bin/codelldb", -- 确保此路径正确指向 codelldb 可执行文件
+		command = "/Users/gunneo/.local/share/nvim/mason/bin/codelldb",
 		args = { "--port", "${port}" },
 		env = {
 			LLDB_LAUNCH_FLAG_LAUNCH_IN_TTY = "YES",

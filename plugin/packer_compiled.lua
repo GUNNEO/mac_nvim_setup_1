@@ -234,6 +234,11 @@ _G.packer_plugins = {
     path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-nio"] = {
+    loaded = true,
+    path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/nvim-nio",
+    url = "https://github.com/nvim-neotest/nvim-nio"
+  },
   ["nvim-notify"] = {
     loaded = true,
     path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/nvim-notify",
@@ -300,11 +305,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/vim-ReplaceWithRegister",
     url = "https://github.com/inkarkat/vim-ReplaceWithRegister"
-  },
-  ["vim-matlab"] = {
-    loaded = true,
-    path = "/Users/gunneo/.local/share/nvim/site/pack/packer/start/vim-matlab",
-    url = "https://github.com/daeyun/vim-matlab"
   },
   ["vim-maximizer"] = {
     loaded = true,

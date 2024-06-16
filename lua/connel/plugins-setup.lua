@@ -110,13 +110,11 @@ return packer.startup(function(use)
 	-- plenary.nvim
 	use("nvim-lua/plenary.nvim")
 
-	-- matlab
-	use("daeyun/vim-matlab")
-
 	-- DAP
 	use("mfussenegger/nvim-dap")
 	use("ravenxrz/DAPInstall.nvim")
 	use("theHamsta/nvim-dap-virtual-text")
+	use("nvim-neotest/nvim-nio")
 	use("rcarriga/nvim-dap-ui") -- ui design
 	use("nvim-telescope/telescope-dap.nvim")
 	use("jay-babu/mason-nvim-dap.nvim")

@@ -29,7 +29,6 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"emmet_ls",
 		"pylsp",
-		"matlab_ls",
 		"texlab",
 	},
 })
