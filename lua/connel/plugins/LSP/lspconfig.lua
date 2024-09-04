@@ -70,6 +70,19 @@ lspconfig["cssls"].setup({
 lspconfig["pylsp"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	filetypes = { "python" },
+	settings = {
+		pylsp = {
+			plugins = {
+				pycodestyle = {
+					enabled = true,
+					ignore = { "E501", "E231" },
+					maxLineLength = 120,
+				},
+				yapf = { enabled = true },
+			},
+		},
+	},
 })
 
 lspconfig["clangd"].setup({
