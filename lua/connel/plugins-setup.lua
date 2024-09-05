@@ -155,6 +155,8 @@ return packer.startup(function(use)
 	-- highlight color
 	use("brenoprata10/nvim-highlight-colors")
 
+	-- bufferline
+	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 	if packer_bootstrap then
 		require("packer").sync()
 	end
