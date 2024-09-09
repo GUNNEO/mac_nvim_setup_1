@@ -83,7 +83,7 @@ keymap.set("n", "<leader>pp", "<cmd>!python3 %<CR>")
 keymap.set("n", "<leader>cpp", ":w<CR>:!clang++ -g -arch arm64 % -o %:r && %:r<CR>", { noremap = true, silent = true })
 
 -- DAP
-keymap.set("n", "<leader>bb", "<cmd>lua require('dap').toggle_breakpoint()<CR>")
+keymap.set("n", "<leader>tb", "<cmd>lua require('dap').toggle_breakpoint()<CR>")
 keymap.set("n", "<leader>n", "<cmd>lua require('dap').continue()<CR>")
 keymap.set("n", "<leader>/", "<cmd>lua require('dap').step_over()<CR>")
 keymap.set("n", "<leader>.", "<cmd>lua require('dap').step_into()<CR>")
