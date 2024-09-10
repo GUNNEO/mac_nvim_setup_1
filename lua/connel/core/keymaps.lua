@@ -38,7 +38,7 @@ keymap.set("n", "<leader>cf", ":Cppath<CR>")
 vim.api.nvim_create_user_command("CleanDSStoreFiles", function()
 	-- Find all .DS_Store files recursively
 	local current_dir = vim.fn.getcwd()
-	local ds_store_files = vim.fn.glob(current_dir .. "/**/.DS_Store", 0, 1)
+	local ds_store_files = vim.fn.systemlist("find " .. current_dir .. " -name .DS_Store")
 	for _, file in ipairs(ds_store_files) do
 		vim.fn.delete(file) -- Delete each .DS_Store file
 	end
