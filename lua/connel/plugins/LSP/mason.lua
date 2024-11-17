@@ -27,7 +27,6 @@ mason_lspconfig.setup({
 		"tailwindcss",
 		"lua_ls",
 		"emmet_ls",
-		"pylsp",
 		"texlab",
 	},
 })

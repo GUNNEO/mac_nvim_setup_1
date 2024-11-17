@@ -48,6 +48,7 @@ lspconfig["cssls"].setup({
 
 -- configure python lsp server
 lspconfig["pylsp"].setup({
+	cmd = { "/Users/gunneo/anaconda3/bin/pylsp" },
 	capabilities = capabilities,
 	on_attach = on_attach,
 	filetypes = { "python" },
