@@ -130,9 +130,6 @@ return packer.startup(function(use)
 	-- nui.nvim
 	use("MunifTanjim/nui.nvim")
 
-	-- image
-	use("3rd/image.nvim")
-
 	use("rcarriga/nvim-notify")
 
 	-- leetcode
@@ -156,6 +153,9 @@ return packer.startup(function(use)
 
 	-- bufferline
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+
+	-- github copilot
+	use("github/copilot.vim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
